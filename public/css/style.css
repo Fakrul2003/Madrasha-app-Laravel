@@ -1,0 +1,167 @@
+/* =======================================
+   Base & Reset Styles
+   ======================================= */
+/* ব্রাউজারের ডিফল্ট মার্জিন ও প্যাডিং রিসেট করা */
+
+
+.containe{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* হালকা ধূসর ব্যাকগ্রাউন্ড */
+}
+
+/* নিশ্চিত করা যে padding/border গণনা box-sizing এর মধ্যে থাকে */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* =======================================
+   Navigation Bar Styles (Based on your Image)
+   ======================================= */
+.navbar {
+    /* আপনার ইমেজের মতো সবুজ ব্যাকগ্রাউন্ড */
+    background-color: #38a536 !important; 
+    /* নেভিগেশনের নিচে কোনো বর্ডার বা শ্যাডো থাকলে তা সরাতে পারে */
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Nav links: সাদা টেক্সট */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #e3e3e3 !important;
+}
+
+/* Dropdown Menu স্টাইল */
+.dropdown-menu {
+    border: none;
+    border-top: 3px solid #f6b53e; /* Donation বাটনের রঙের সাথে মিল রেখে */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    font-size: 0.95rem;
+}
+
+/* Donation Button স্টাইল (Nav Bar-এর ডান দিকে) */
+.btn-donation {
+    background-color: #ffc107; /* হলুদ বা হালকা কমলা */
+    color: #333;
+    font-weight: bold;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-donation:hover {
+    background-color: #e0a800;
+    color: #333;
+}
+
+/* =======================================
+   Hero Section Styles
+   ======================================= */
+
+.main-hero-section {
+    /* আপনার ইমেজের মতো উচ্চতা দিন */
+    height: 590px; 
+    width: 100%;
+    /* আপনার public/images/gb.png ফাইলটি এখানে লিঙ্ক করুন */
+    background-image: url('../image/gb.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white; 
+    text-align: center;
+    
+    /* Flexbox ব্যবহার করে কন্টেন্ট মাঝখানে আনা */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* নিশ্চিত করুন এটি Nav Bar-এর নিচে লেগে থাকে */
+    
+}
+
+.hero-content {
+    /* ইমেজ টেক্সট যেন ব্যাকগ্রাউন্ড থেকে আলাদাভাবে দেখা যায় */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    /* আপনার ইমেজে থাকা কাস্টম কালার (যেমন হালকা সবুজ) ব্যবহার করা যেতে পারে */
+    color: #c8e6c9; 
+}
+
+
+/* =======================================
+   Dashboard/List Table Styles (Customizing Bootstrap)
+   ======================================= */
+   
+/* Card এবং Shadow স্টাইল */
+.card.shadow-sm {
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* Table Header Customization */
+.table-dark thead th {
+    background-color: #2c3e50; /* গাঢ় ধূসর/নীল */
+    color: #ecf0f1;
+    border-bottom: 2px solid #38a536; /* সবুজ বর্ডার */
+}
+
+/* Table Hover Effect একটু জোরদার করা */
+.table-hover tbody tr:hover {
+    background-color: #eef1f3;
+    cursor: pointer;
+}
+
+
+
+
+
+.donate-section {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.donate-section img {
+    transition: transform 0.3s ease;
+}
+
+.donate-section img:hover {
+    transform: scale(1.05);
+}
+
+/* =====login===== */
+
+.row{
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
